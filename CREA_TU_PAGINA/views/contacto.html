@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/estilos/estilos.css">
+    <link rel="icon" href="../assets/images/mando.png">
+</head>
+<body>
+    
+    <header>
+        <h1><span>LET'S PLAY TOGETHER</span> <br> <img src="../assets/images/mando.png" alt="logo" class="logo"></h1>
+        <button class="menu-toggle" onclick="toggleMenu()">Menú</button>
+        <nav>
+            <div class="list">
+                <a href="../index.html" >INICIO</a>
+            </div>
+            <div id="color_list" class="list">
+                <a href="#">CONTACTO</a>
+            </div>
+            <div class="list">
+                <a href="galeria.html">GALERÍA</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form name="form" id="form">
+                <fieldset class="form-control">
+                    <h2>FORMULARIO DE REGISTRO</h2>
+                    <div>
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" name="nombre" id="nombre" placeholder="Inserte su nombre..." >
+                        <small class="error-mensaje"></small>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label><br>
+                        <input type="text" name="apellido" id="apellido" placeholder="Inserte su apellido..." >
+                        <small class="error-mensaje"></small>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Inserte su Número telefónico..." >
+                        <small class="error-mensaje"></small>
+                    </div>
+                    <div>
+                        <label for="email">Correo:</label><br>
+                        <input type="text" name="email" id="email" placeholder="Inserte su email..." >
+                        <small class="error-mensaje"></small>
+                    </div>
+                    <div>
+                        <label for="comentario">Comentarios:</label><br>
+                        <textarea name="comentario" id="comentario" rows="5" cols="50"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="enviar" id="enviar" class="boton">
+                        <input type="reset" value="borrar" id="borrar" class="boton">
+                    </div>
+                </fieldset>
+            </form>
+        </section><br>
+        <div class="location">
+            <div class="map" id="map"></div>
+        </div><br>
+    </main>
+    <footer>
+        <div class="aviso">© 2024 SEEA | Aviso Legal | Política de Privacidad | Política de Cookies</div>
+            <span class="bold">Ubicado en:</span>
+            <div class="direccion">Estadio Santiago Bernabéu</div>
+            <div>
+                <span class="bold">Email:</span>
+                <a class="datos" href="mailto:joshua03@yopmail.com">Joshua03@yopmail.com</a>
+            </div>
+            <div>
+                <span class="bold">Teléfono:</span>
+                <a class="datos" href="tel:012345666">012345666</a>
+            </div>
+            <div class="comentario">Puedes seguirnos en nuestras redes :3</div>
+            <a href="https://www.facebook.com/PlayStationES"><img class="redSocial" src="../assets/images/instagram-logo.png" alt="instagram"></a>
+            <a href="https://www.instagram.com/playstation/"><img class="redSocial" src="../assets/images/Facebook-PNG-HD.png" alt="Facebook"></a>
+    </footer>
+    <script src="../script/form.js"></script>
+    <script src="../script/ubicacion.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxITVdmOsLTrH749Ea2uQWc0FZ8DpRIto&callback=initMap" 
+    async defer></script>
+    <script src="../script/mobile.js"></script>
+</body>
+</html>
